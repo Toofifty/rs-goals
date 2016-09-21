@@ -1,0 +1,12 @@
+<h3>{{sheet.title}} <small>{{sheet.user}}</small></h3>
+<div id="goalsheet-container">
+  <table id="goalsheet">
+    <tr ng-repeat="j in sheet_height">
+      <td ng-repeat="i in sheet_width">
+        {{item_at(i, j)}}
+        <img src="{{current_item.image.url}}" width="{{current_item.image.width}}" height="{{current_item.image.height}}">
+      </td>
+    </tr>
+  </table>
+</div>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-goal">Add New Goal</button>

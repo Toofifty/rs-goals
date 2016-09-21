@@ -1,0 +1,43 @@
+body {
+  padding-top: 50px;
+}
+
+#goalsheet {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  text-align: center;
+}
+
+#goalsheet td {
+  height: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  outline: 1px solid transparent;
+  padding: 0;
+}
+
+#goalsheet td:hover {
+  outline-color: #DDD;
+}
+
+#goalsheet icon {
+  text-align: center;
+}
+
+.mini-container {
+  padding: 15px;
+}
+
+.fix-height-pls {
+  min-height: 215px;
+}
+
+.overscroll-box {
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.search-table tbody tr td {
+  min-width: 32px;
+  min-height: 32px;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "rs-goals",
+  "version": "0.0.1",
+  "description": "Runescape 3 / Old School goal tracker - track items, levels and quests",
+  "main": "server.js",
+  "repository": "",
+  "author": "Alex Matheson <alex@etabyte.net>",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.6"
+  }
+}

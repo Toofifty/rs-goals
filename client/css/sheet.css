@@ -1,0 +1,183 @@
+/*
+#505873
+#f7f7f4
+#ece2cd
+#90c0dd
+#d2b48c
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro);
+
+body {
+    margin: 0;
+    
+    background: #f7f7f4;
+}
+
+header {
+    background: #505873;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    color: #FFF;
+    padding: 0;
+}
+
+.logo-text {
+    font-size: 1.2em;
+    margin: 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+.hdr-actions {
+    float: right;
+    width: 50%;
+    max-width: 300px;
+    vertical-align: middle;
+    height: 63px;
+    display: flex;
+    text-align: center;
+}
+
+.hdr-action {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.hdr-action:hover {
+    background: #ece2cd;
+}
+
+.hdr-action:active {
+    background: #d2b48c;
+}
+
+#goalsheet {
+    width: 100%;
+    text-align: center;
+}
+
+#goalsheet-data {
+    border-collapse: collapse;
+    margin: 20px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+}
+
+#goalsheet-data tr {
+    height: 40px;
+}
+
+#goalsheet-data td {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+    opacity: 0.5;
+    position: relative;
+    outline: 2px solid transparent;
+    transition: 0.25s;
+}
+
+#goalsheet-data .completed-goal {
+    opacity: 1;
+}
+
+#goalsheet-data td:hover {
+    opacity: 1;
+    //box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+    outline-color: #90c0dd;
+    cursor: pointer;
+}
+
+#goalsheet-data img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#goalsheet-data td:hover {
+    transform: scale(2);
+    image-rendering: pixelated;
+}
+
+#goalsheet-data .item {
+    
+}
+
+#goalsheet-data td:before {
+    content: attr(amount);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Lato", monospace;
+    font-size: 0.7em;
+    text-shadow: 1px 1px 0px #000;
+    display: block;
+}
+
+.tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    background: #90c0dd;
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    text-align: center;
+    max-width: 120px;
+    border-bottom: 3px solid #505873;
+}
+
+.tooltip:before {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid #90c0dd 10px;
+    top: -10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    width: 0;
+}
+
+.tt-hidden {
+    opacity: 0;
+}
+
+#add-item {
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+    width: 50%;
+    height: 50%;
+}
+
+.goal-type-tab {
+    background: #505873;
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+}
+
+.goal-settings, .goal-picker {
+    display: inline-block;
+    height: 100%;
+    width: calc(50% - 25px);
+}
+
+.goal-settings {
+    background: #ece2cd;
+}
+
+.goal-picker {
+    background: #f7f7f4;
+}
